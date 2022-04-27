@@ -49,6 +49,15 @@
       justify-content: center;
       ul {
         list-style: none;
+        li {
+          i {
+            color: #c0392b;
+            margin-left: 2rem;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
       }
       h3 {
         color: $primaryColor;

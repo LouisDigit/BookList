@@ -55,15 +55,18 @@ const Form = () => {
           className="btn btn-success shadow-none"
           onClick={(e) => {
             e.preventDefault();
-            if (bookType === "new") {
+            if (bookType === "new" && !listNewBook.includes(bookName)) {
               listNewBook === []
                 ? setNewBook([bookName])
                 : setNewBook([...listNewBook, bookName]);
-            } else if (bookType === "loading") {
+            } else if (
+              bookType === "loading" &&
+              !listLoadingBook.includes(bookName)
+            ) {
               listLoadingBook === []
                 ? setLoadingBook([bookName])
                 : setLoadingBook([...listLoadingBook, bookName]);
-            } else {
+            } else if (bookType === "end" && !listEndBook.includes(bookName)) {
               listEndBook === []
                 ? setEndBook([bookName])
                 : setEndBook([...listEndBook, bookName]);
