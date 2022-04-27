@@ -1,0 +1,60 @@
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  form {
+    display: flex;
+    flex-direction: column;
+    button {
+      margin-top: 0.5rem;
+    }
+    input {
+      padding: 2px;
+      &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+      }
+      &:active {
+        box-shadow: none;
+      }
+    }
+    select {
+      margin-top: 0.5rem;
+      &:focus {
+        outline: none !important;
+        box-shadow: none;
+      }
+    }
+  }
+  .list-book {
+    min-height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+    div {
+      height: 100%;
+      width: 25%;
+      border: 1px solid $primaryColor;
+      border-radius: 15px;
+      color: $black;
+      padding: 5px;
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      ul {
+        list-style: none;
+      }
+      h3 {
+        color: $primaryColor;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -2,10 +2,11 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header>
-      <h1>My Todo List</h1>
-      <i class="fa-solid fa-list-check"></i>
-    </header>
+    <div className="header-content">
+      <h1>Welcome to your BookList</h1>
+      <i className="fa-solid fa-book-open"></i>
+    </div>
   );
 };
+
 export default Header;

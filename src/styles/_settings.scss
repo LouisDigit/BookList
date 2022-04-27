@@ -1,7 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
 $font-family: "Roboto", sans-serif;
-$primaryColor: #3498db;
-$secondaryColor: #74b9ff;
+$primaryColor: #198754;
 $white: #ddd;
 $black: #333;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  color: $white;
+  background-color: $white;
+}
+
+a {
+  text-decoration: none;
+}
